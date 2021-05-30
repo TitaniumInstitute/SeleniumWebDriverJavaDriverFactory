@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Driver_Factory_Suite" thread-count="4" parallel="tests">
+    <test name="ChromeTest">
+        <parameter name="browser" value="CHROME"/>
+        <classes>
+            <class name="com.titanium.testcases.DriverFactoryTest"/>
+        </classes>
+    </test>
+
+    <test name="FireFoxTest">
+        <parameter name="browser" value="FIREFOX"/>
+        <classes>
+            <class name="com.titanium.testcases.DriverFactoryTest"/>
+        </classes>
+    </test>
+
+    <test name="EdgeTest">
+        <parameter name="browser" value="EDGE"/>
+        <classes>
+            <class name="com.titanium.testcases.DriverFactoryTest"/>
+        </classes>
+    </test>
+
+    <test name="BraveTest">
+        <parameter name="browser" value="BRAVE"/>
+        <classes>
+            <class name="com.titanium.testcases.DriverFactoryTest"/>
+        </classes>
+    </test>
+</suite>
